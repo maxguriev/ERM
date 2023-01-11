@@ -1,0 +1,150 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(https://img.freepik.com/premium-photo/blurry-background-terrible-traffic-jam-city_43780-3276.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    padding-left: 0%;
+    padding-right: 0%;
+    box-sizing: border-box;
+}
+.navbar {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.logo {
+    width: 150px;
+    cursor: pointer;
+    padding-left: 2%;
+    padding-top: 1%;
+    margin-bottom: 25px;
+}
+nav {
+    flex: 1;
+    text-align: left;
+    margin-left: 0px;
+}
+nav ul {
+    text-align: center;
+    margin-bottom: 50px;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+    text-align: center;
+    width: 70px;
+    font-size: 12px;
+}
+nav ul li img {
+    transition-duration: 0.4s;
+}
+nav ul li img:hover {
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.row {
+    position: relative;
+    display: flex;
+    height: 50%;
+    margin-top: 150px;
+    align-items: center;
+    padding-left: 8%;
+}
+.col {
+    flex-basis: 50%;
+}
+h1 {
+    color: rgb(66, 66, 66);
+    font-size: 80px;
+}
+h2 {
+    color: rgb(66, 66, 66);
+    font-size: 25px;
+}
+h5 {
+    color: rgb(19, 161, 0);
+    font-size: 18px;
+}
+p {
+    color: rgb(66, 66, 66);
+    font-size: 16px;
+    line-height: 15px;
+}
+button {
+    width: 200px;
+    color: black;
+    padding: 12px 0;
+    background: #fff;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+button:hover {
+    background: rgb(66, 66, 66);
+    color: #fff;
+    cursor: pointer;
+}
+.card {
+    width: 400px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    background-position: top;
+    transition: transform 0.2s;
+}
+.card1 {
+    background-image: url(https://www.ermtelematics.com/sites/default/files/2018-04/e%20com3_1.png);
+    background-position: center;
+}
+.card2 {
+    background-image: url(https://www.ermtelematics.com/sites/default/files/2018-06/e%20Fuel2.png);
+    background-position: center;
+}
+.card3 {
+    background-image: url(https://www.ermtelematics.com/sites/default/files/2018-07/StarLink%20One.png);
+    background-position: center;
+}
+.card4 {
+    background-image: url(https://www.ermtelematics.com/sites/default/files/2018-07/StarLink%20Tracker%20-%20ERM_0.jpg);
+    background-position: center;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card p {
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+}
+@media only screen and (max-width: 768px) {
+    .container {background-size: cover; height: 140vh;}
+    .row {display: contents;}
+    .card {width: 200px; height: 180px; background-position: center;}
+    a img {width: 70%;}
+    nav ul li {margin-left: 0;}
+    h1 {margin-left: 15px;}
+    h2 {margin-left: 15px;}
+    .col p {margin-left: 15px;}
+    button {margin-left: 15px;}
+}
